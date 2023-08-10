@@ -31,7 +31,7 @@ const Contact = () => {
             <div className="text-center text-color-primary mb-20 font-bold text-4xl sm:text-5xl">Contact</div>
             <div className="flex flex-col space-y-10">
                 <h4 className="text-xl sm:text-4xl text-white font-semibold text-center sm:mx-auto mx-3">
-                    I have got just what you need. Let's talk!
+                    I have got just what you need. Let&apos;s talk!
                 </h4>
                 <div className="space-y-10">
                     <div className="flex items-center space-x-5 justify-center">
