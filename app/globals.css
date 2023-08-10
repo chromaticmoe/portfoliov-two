@@ -2,26 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  height: 100%;
+  scroll-behavior: smooth;
+  transition: all 400ms ease;
+ 
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-color-bg scrollbar scrollbar-track-color-bg-variant/20 scrollbar-thumb-color-primary/80
+}
+
+@layer components {
+  .contactInput {
+    @apply outline-none bg-color-bg-variant rounded-sm border-b px-6 py-4 border-[#242424] text-color-light placeholder-gray-500 transition-all focus:border-[#335E82]/70 focus:text-[#FFFFFF] hover:border-[#335E82]/70
+  }
 }
