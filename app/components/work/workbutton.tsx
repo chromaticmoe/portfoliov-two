@@ -1,13 +1,17 @@
 interface WorkButtonProps {
     name: string;
+    link?: string;
 }
 
 const WorkButton: React.FC<WorkButtonProps> = ({
     name,
+    link,
 }) => {
     return ( 
         <a 
-            href="#"
+            href={link || "#"}
+            target="_blank"
+            rel="noopener noreferrer"
             className="
                 bg-color-primary 
                 w-max 

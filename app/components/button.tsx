@@ -1,7 +1,7 @@
 const Button: React.FC = () => {
     return ( 
         <a 
-            href="#work"
+            href="#about"
             className="
                 bg-color-primary 
                 w-max 
