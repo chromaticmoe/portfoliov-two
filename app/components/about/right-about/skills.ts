@@ -67,7 +67,7 @@ const skills = [
     {
         id: 14,
         name: "C++",
-        image: "/images/skillsimg/C++.png"
+        image: "/images/skillsimg/c++.png"
     },
     {
         id: 15,
